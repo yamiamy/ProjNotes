@@ -1,11 +1,9 @@
-#!/usr/bin/env node
-
 /**
  * Module dependencies.
  */
 
 var app = require('../app');
-var debug = require('debug')('projnotes:server');
+var debug = require('debug')('ProjNotes:server');
 var http = require('http');
 
 /**
