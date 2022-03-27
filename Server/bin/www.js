@@ -5,7 +5,7 @@
  */
 
  var app = require('../app');
- var debug = require('debug')('ProjNotes:server');
+ var debug = require('debug')('projnotes:server'); 
  var http = require('http');
  
  /**
@@ -80,7 +80,6 @@
  /**
   * Event listener for HTTP server "listening" event.
   */
- 
   function onListening() {
     var addr = server.address();
     var bind = typeof addr === 'string'
@@ -88,4 +87,4 @@
       : 'port ' + addr.port;
     debug('Listening on ' + bind);
     console.log(`Servidor escuchando... en ${app.get('port')}`)
-  
+  }
