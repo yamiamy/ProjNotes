@@ -6,7 +6,8 @@
         "start": "node ./dist/bin/www",
         "dev": "babel-watch ./server/bin/www",
         "build:s": "npm run clean:cp && babel ./server --out-dir dist --copy-files ",
-        "clean:cp": "rimraf dist"
+        "clean:cp": "rimraf dist",
+        "client:server": "SET NODE_ENV=development && webpack serve --config ./webpack.config.js --mode development"
     },
     "dependencies": {
         "app-root-path": "^3.0.0",
@@ -50,7 +51,7 @@
         "webpack": "^5.70.0",
         "webpack-cli": "^4.9.2",
         "webpack-dev-middleware": "^5.3.1",
-        "webpack-dev-server": "^3.11.3",
+        "webpack-dev-server": "^4.7.4",
         "webpack-hot-middleware": "^2.25.1"
     }
 }
